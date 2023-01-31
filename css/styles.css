@@ -144,7 +144,11 @@ img {
     text-align: center;
 }
 
+
+
 .hero-title {
+    margin: auto;
+    width: 496px;
     margin-bottom: 48px;
     color: var(--default-color);
     font-size: 56px;
