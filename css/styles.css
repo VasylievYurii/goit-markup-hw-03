@@ -270,20 +270,25 @@ img {
     display: flex;
 }
 
-.container-team .card {
+.container-team .card:not(:last-child) {
     margin-right: 24px;
 }
 
 .card {
     display: block;
-    padding-bottom: 32px;
+    /* padding-bottom: 32px; */
     background-color: var(--default-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
 }
 
+.card-text {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
 .team-member {
-    margin-top: 32px;
+
     color: var(--dark-color);
     font-weight: 500;
     font-size: 20px;
@@ -327,7 +332,7 @@ img {
 
 .footer-text {
     margin-top: 16px;
-    display: flex;
+    display: block;
     width: 25%;
 }
 
