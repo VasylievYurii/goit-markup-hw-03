@@ -183,7 +183,7 @@ img {
     /* outline: 2px solid crimson; */
 }
 
-/*Benefits section*/
+/*--------------------Benefits section---------------------*/
 
 .container-list {
     display: flex;
@@ -195,6 +195,36 @@ img {
 
 .container-list .item:not(:last-child) {
     margin-right: 24px;
+}
+
+.benefits-item::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 112px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    background-color: var(--light-mode);
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.icon-antenna::before {
+    background-image: url('../images/sprite.svg#antenna');
+}
+
+.icon-clock::before {
+    background-image: url('../images/sprite.svg#clock');
+}
+
+.icon-diagram::before {
+
+    background-image: url('../images/sprite.svg#diagram');
+}
+
+.icon-astronaut::before {
+    background-image: url('../images/sprite.svg#astronaut');
 }
 
 .benefits-item {
